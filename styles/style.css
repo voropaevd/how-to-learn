@@ -1,9 +1,3 @@
-p {
-  margin: 0 0;
-}
-  /* Так ведь можно? В нормалайз нет правила для p */
-
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -21,7 +15,7 @@ p {
 }
 
 .header__title {
-width: 730px;
+max-width: 730px;
 align-self: center;
 margin-left: 64px;
 line-height: 96px;
@@ -31,7 +25,7 @@ z-index: 2;
 }
 
 .header__subtitle {
-width: 388px;
+max-width: 388px;
 position: absolute;
 left: 64px;
 bottom: 30px;
@@ -44,13 +38,13 @@ z-index: 2;
 
 .header__link {
   text-decoration: none;
-  text-decoration-color: #2f80ed;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
   width: 765px;
   height: 608px;
-  background-size: cover;
+  object-fit: cover;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -91,7 +85,8 @@ z-index: 2;
 }
 
 .two-columns__brief {
-  width: 175px;
+  margin: 0 0;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -99,6 +94,7 @@ z-index: 2;
 }
 
 .two-columns__main-text {
+  margin: 0 0;
   width: 80%;
   min-width: 784px;
   display: flex;
@@ -111,6 +107,7 @@ z-index: 2;
 }
 
 .two-columns__paragraph {
+  margin: 0 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
@@ -169,24 +166,16 @@ z-index: 2;
 }
 
 .table__heading {
-  margin: 0 0 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-}
-
-.table__heading_digits_margin {
-  margin-bottom: 20px;
+  margin: 0 0;
 }
 
 .table__text {
-  margin: 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text_source {
   margin: 20px 0 0;
 }
 
@@ -200,7 +189,7 @@ z-index: 2;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin:100px 0 70px;
   line-height: 1.15;
   font-size: 120px;
@@ -210,6 +199,7 @@ z-index: 2;
 }
 
 .feynman__subtitle {
+  margin: 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -224,7 +214,7 @@ z-index: 2;
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
-  text-decoration-color: #2f80ed;
+  color: #2f80ed;
   z-index: 1;
 }
 
@@ -299,9 +289,16 @@ z-index: 2;
   width: 90%;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
   flex-basis: 711px;
-  position: relative;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -309,14 +306,11 @@ z-index: 2;
 }
 
 .footer__author {
-  margin: 18px 0 18px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: #f2f2f2;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .footer__column-heading {
@@ -342,6 +336,7 @@ z-index: 2;
 }
 
 .footer__column-links {
+  margin: 0 0;
   list-style-type: none;
   padding: 0;
 }
