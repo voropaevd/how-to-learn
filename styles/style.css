@@ -296,7 +296,6 @@ z-index: 2;
 
 .footer__column_content_copyright {
   display: flex;
-  flex-direction: column;
   flex-basis: 711px;
   justify-content: space-between;
 }
@@ -314,7 +313,7 @@ z-index: 2;
 }
 
 .footer__column-heading {
-  margin:0 0 20px;
+  margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
