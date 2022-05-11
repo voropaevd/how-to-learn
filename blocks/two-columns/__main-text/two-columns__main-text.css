@@ -1,0 +1,12 @@
+.two-columns__main-text {
+  margin: 0 0;
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__main-text :last-of-type {
+  margin-bottom: 0;
+}

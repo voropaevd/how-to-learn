@@ -1,3 +1,16 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -12,6 +25,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__title {
@@ -39,6 +53,12 @@ z-index: 2;
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -120,6 +140,164 @@ z-index: 2;
   font-size: 24px;
   font-weight: bold;
   color: black;
+}
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  width: 80%;
+  margin: auto;
+}
+
+.cards {
+  margin: 0 0;
+  padding: 0 0;
+  width: 80%;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:first baseline
+}
+
+.cards__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 100px;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+  object-fit: cover;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  margin-bottom: -50px;
+  margin-top: 50px
+}
+
+.video__iframes :first-child {
+  margin-right: 20px;
+}
+
+.video__iframe {
+  height: 316px;
+  width: 515px;
+}
+
+.oakley {
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.khan {
+  display: flex;
+  flex-direction: column;
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 50px 0 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0 68px;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.khan__book-pic {
+  height: 608px;
+  width: 620px;
+  object-fit: cover;
+  object-position: left top;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  transition: all 0.2s linear;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.5;
 }
 
 .digits {
@@ -216,6 +394,11 @@ z-index: 2;
   text-decoration: none;
   color: #2f80ed;
   z-index: 1;
+  transition: all 0.2s linear;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
 }
 
 .feynman__img {
@@ -272,6 +455,36 @@ z-index: 2;
   z-index: 1;
 }
 
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 80px;
+  width: 1100;
+}
+
+.resources__link {
+  width: 270px;
+  height: 38px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  transition: all 0.2s linear;
+}
+
+.resources__logo:hover {
+  opacity: 0.5;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -326,6 +539,11 @@ z-index: 2;
   font-weight: normal;
   color: #f2f2f2;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
 }
 
 .footer__social-icon {
