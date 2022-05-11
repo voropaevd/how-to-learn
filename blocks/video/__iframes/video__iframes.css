@@ -1,0 +1,9 @@
+.video__iframes {
+  display: flex;
+  margin-bottom: -50px;
+  margin-top: 50px
+}
+
+.video__iframes :first-child {
+  margin-right: 20px;
+}

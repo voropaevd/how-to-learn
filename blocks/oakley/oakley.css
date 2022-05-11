@@ -1,8 +1,7 @@
-.techniques {
+.oakley {
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0 0;
-  width: 80%;
-  margin: auto;
+  background-color: #f2f2f2;
 }
